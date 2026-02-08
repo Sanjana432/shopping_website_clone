@@ -1,25 +1,19 @@
-import { Navbar } from "@/components/navbar"
-import { Hero } from "@/components/hero"
-import { Categories } from "@/components/categories"
-import { Products } from "@/components/products"
-import { PromoBanner } from "@/components/promo-banner"
-import { Testimonials } from "@/components/testimonials"
-import { Newsletter } from "@/components/newsletter"
-import { Footer } from "@/components/footer"
+import { PortfolioNav } from "@/components/portfolio/nav"
+import { PortfolioHero } from "@/components/portfolio/hero"
+import { PortfolioExperience } from "@/components/portfolio/experience"
+import { PortfolioSkills } from "@/components/portfolio/skills"
+import { PortfolioContact } from "@/components/portfolio/contact"
 
 export default function Page() {
   return (
-    <div className="min-h-screen">
-      <Navbar />
+    <div className="min-h-screen bg-background text-foreground">
+      <PortfolioNav />
       <main>
-        <Hero />
-        <Categories />
-        <Products />
-        <PromoBanner />
-        <Testimonials />
-        <Newsletter />
+        <PortfolioHero />
+        <PortfolioExperience />
+        <PortfolioSkills />
+        <PortfolioContact />
       </main>
-      <Footer />
     </div>
   )
 }
